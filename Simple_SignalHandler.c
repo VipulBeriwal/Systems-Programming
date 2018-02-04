@@ -23,7 +23,7 @@ void Signal_Handler(int sig){
 
 
 int main(){
-	//if ctrl+c comes before handling the signal it terminates
+	//if ctrl+c comes before handling the signal it terminates (default behaviour of SIGINT)
 	printf("Press 'Ctrl + c' before 10 seconds for not to handle the SIGINT.\n");
 	for(int j = 1; j <=10; j++){
 		printf("%d seconds\n", j);
