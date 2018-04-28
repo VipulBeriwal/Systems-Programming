@@ -1,3 +1,14 @@
+/*THE LOGIC
+When a process goes in a wait state and returns to running, this time is called a Context Switch.
+The program is based on a Virtual token. The token is alternatively passed between parent and child processes.
+When a process gives token two other, it is forced to wait on a lock (mutex), till it recieves the token again. Thus 
+token is continously exchanged like a Ping Pong. When the process receives the token again, it becomes alive again.
+Hence, timestamps were introduced in the program and time is calculated as an average. */
+
+
+//Note: The time varies according the configuration of the system.
+
+
 #include <stdlib.h>
 #include <stdio.h>
 #include <unistd.h>
