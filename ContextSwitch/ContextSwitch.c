@@ -1,5 +1,5 @@
 /*THE LOGIC
-When a process goes in a wait state and returns to running, this time is called a Context Switch.
+When a process goes in a wait state and returns to running, this time gap is called a time of Context Switch.
 The program is based on a Virtual token. The token is alternatively passed between parent and child processes.
 When a process gives token two other, it is forced to wait on a lock (mutex), till it recieves the token again. Thus 
 token is continously exchanged like a Ping Pong. When the process receives the token again, it becomes alive again.
